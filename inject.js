@@ -1,4 +1,4 @@
-const slugify = string => {
+const slugify = (string) => {
   const a =
     "àáäâãåăæąçćčđďèéěėëêęğǵḧìíïîįłḿǹńňñòóöôœøṕŕřßşśšșťțùúüûǘůűūųẃẍÿýźžż·/_,:;";
   const b =
@@ -15,7 +15,7 @@ const slugify = string => {
     .replace(/\-\-+/g, "-")
     .replace(/^-+/, "")
     .replace(/-+$/, "");
-}
+};
 
 (() => {
   const heading = document.querySelector(
@@ -25,10 +25,7 @@ const slugify = string => {
     'div[class^="BreadcrumbsItem__"] a[href*="browse"]:last-child'
   ).innerText;
 
-  const branchStrategy = "feat/dev/";
-  const branchName = `${ticketName}-${slugify(
-    heading.innerText
-  )}`;
+  const branchName = `${ticketName}-${slugify(heading.innerText)}`;
 
   const input = document.createElement("input");
   input.style.position = "fixed";
