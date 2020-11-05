@@ -44,6 +44,9 @@ PROJX-01-cool-ticket-name
 ### Changelog
 + 2020-11-05: 🎉 First version released
 
+### Also see
+[Branch from Ticket for Chrome](https://github.com/urre/branch-from-ticket)
+
 ### License
 
 MIT © [Urban Sanden](https://twitter.com/urre)
